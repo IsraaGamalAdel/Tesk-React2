@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: #0aad0ac1 0px 2px 4px -1px,#0aad0ac1 0px 4px 5px 0px,#0aad0ac1 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border:solid 1px rgba(0, 0, 0, .175);
+    border-radius: 6px;
+}
+.broderCategories:hover
+{
+    box-shadow: var(--shadow);
+    /* border:solid 1px rgba(0, 0, 0, .175); */
+    border-radius: 6px;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.btnFP:hover{
+    background-color: #198754d3 !important;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color) !important;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.network{
+    background-color: #fff;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 99999;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+.broder-main{
+    border: solid 1px var(--main-color) !important;
+}
+.texth3:hover{
+    color: var(--main-color) !important;
+    transition: all .5s;
+}
+.brodercart{
+    border: solid 1px var(--main-color) !important;
+    background-color: var(--main-color) !important;
+    width: 25px;
+    height: 27px;
+    border-radius: .375rem;
+}
+.width{
+    width:140px ;
+}
+.width:hover{
+    background-color: #076c07 !important;
+    color: #fff !important;
+}
+.bg:hover{
+    background-color: var(--main-color) !important;
+    transition: all .5s;
+    color: #fff !important;
+}
+.bg{
+    color: var(--main-color) !important;
+}
